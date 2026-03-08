@@ -1,6 +1,6 @@
 # MMIDDI: Multimodal Mutual Influence Framework for Drug–drug Interaction Under Drug Cold Start 
 
-![]([https://github.com/drunkprogrammer/MMIDDI/blob/Figure1.jpg)
+![]([https://github.com/drunkprogrammer/MMIDDI/blob/main/Figure1.jpg)
 
 ## Contents
 
