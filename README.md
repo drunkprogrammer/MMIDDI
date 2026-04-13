@@ -1,6 +1,6 @@
-# MMIDDI: Multimodal Mutual Influence Framework for Drug–drug Interaction Under Drug Cold Start 
+# MMI-DDI: Multimodal Mutual Influence Framework for Drug–drug Interaction Under Drug Cold Start 
 
-![](https://github.com/drunkprogrammer/MMIDDI/blob/main/Figure1.jpg)
+![](https://github.com/drunkprogrammer/MMI-DDI/blob/main/Figure1.jpg)
 
 ## Contents
 
@@ -11,7 +11,7 @@
 
 ## Overview
 
-Accurate prediction of drug-drug interactions (DDIs) is crucial for safe drug administration and essential to pharmacovigilance. Traditional drug-drug prediction costs huge time and financial resources. In recent years, deep learning has facilitated the prediction of drug-drug interactions. However, most deep learning models focus on drug molecular structure and consider the crucial pharmacological modalities (such as targets and enzymes) independently. Moreover, standard evaluation paradigms often neglect the critical scenarios of single-drug and double-drug cold start, which are essential for real-world applicability. Consequently, predictions are compromised not only by the neglect of multimodal drug-drug interactions but also by dataset shortcomings that cause biased evaluation and muddle the core tasks. To address these challenges, we propose the Multimodal Mutual Influence Drug-Drug Interaction (MMIDDI) framework and contribute a new dataset with a novel label-aware and drug-aware partitioning algorithm. MMIDDI captures and fuses multimodal mutual influences for both intra-drug and inter-drug multimodal mutual influences. The intra-drug multimodal mutual influences include intra-modal dependencies (within a single modality) and inter-modal interactions (across different modalities). The inter-drug multimodal mutual influences represent the bidirectional drug pair influences, which mutual influences cross the modalities of each drug. These comprehensively mined and fused mutual influences are then leveraged by the multi-type DDI predictor to accurately predict the interaction type. Extensive experiments on three tasks (standard, single-drug cold start, and double-drug cold start) demonstrate that MMIDDI significantly outperforms baseline models on key metrics (accuracy, macro precision, and macro recall) while providing deeper insights into pharmacology mechanisms.
+Accurate prediction of drug-drug interactions (DDIs) is crucial for safe drug administration and essential to pharmacovigilance. Traditional drug-drug prediction costs huge time and financial resources. In recent years, deep learning has facilitated the prediction of drug-drug interactions. However, most deep learning models focus on drug molecular structure and consider the crucial pharmacological modalities (such as targets and enzymes) independently. Moreover, standard evaluation paradigms often neglect the critical scenarios of single-drug and double-drug cold start, which are essential for real-world applicability. Consequently, predictions are compromised not only by the neglect of multimodal drug-drug interactions but also by dataset shortcomings that cause biased evaluation and muddle the core tasks. To address these challenges, we propose the Multimodal Mutual Influence Drug-Drug Interaction (MMI-DDI) framework and contribute a new dataset with a novel label-aware and drug-aware partitioning algorithm. MMI-DDI captures and fuses multimodal mutual influences for both intra-drug and inter-drug multimodal mutual influences. The intra-drug multimodal mutual influences include intra-modal dependencies (within a single modality) and inter-modal interactions (across different modalities). The inter-drug multimodal mutual influences represent the bidirectional drug pair influences, which mutual influences cross the modalities of each drug. These comprehensively mined and fused mutual influences are then leveraged by the multi-type DDI predictor to accurately predict the interaction type. Extensive experiments on three tasks (standard, single-drug cold start, and double-drug cold start) demonstrate that MMI-DDI significantly outperforms baseline models on key metrics (accuracy, macro precision, and macro recall) while providing deeper insights into pharmacology mechanisms.
 
 ## Obtain Datasets
 
@@ -20,8 +20,8 @@ The datasets and the prepared benchmarking dataset are available at https://zeno
 ## Enviornment
 
 ```
-conda create -n MMIDDI
-conda activate MMIDDI
+conda create -n MMI-DDI
+conda activate MMI-DDI
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 conda install pandas
 conda install seaborn
