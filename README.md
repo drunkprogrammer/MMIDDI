@@ -1,4 +1,4 @@
-# MMI-DDI: Multimodal Mutual Influence Framework for Drug–drug Interaction Under Drug Cold Start 
+# MMI-DDI: Multimodal Mutual Influence Framework for Drug–Drug Interaction Prediction Under Drug Cold Start 
 
 ![](https://github.com/drunkprogrammer/MMI-DDI/blob/main/Framework.jpg)
 
