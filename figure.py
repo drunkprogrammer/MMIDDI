@@ -23,7 +23,6 @@ def draw_whole_confusion_matrix(y_true, y_pred, event_num, task, saved_path):
     cm = confusion_matrix(y_true, y_pred, labels=np.arange(event_num))
     classes = [f'{i}' for i in range(event_num)]
 
-    # 基础热力图
     plt.figure(figsize=(20, 18))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar_kws={'label': 'Count'}, annot_kws={"size": 5, "color": "black"})
     plt.title('Confusion Matrix', fontsize=14)
@@ -37,7 +36,6 @@ def draw_whole_confusion_matrix(y_true, y_pred, event_num, task, saved_path):
     plt.clf()
     plt.close()
 
-    # 归一化混淆矩阵
     plt.figure(figsize=(20, 18))
     cm_norm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis] * 100  # 转换为百分比
 
@@ -50,7 +48,6 @@ def draw_whole_confusion_matrix(y_true, y_pred, event_num, task, saved_path):
     plt.xticks(ticks=np.arange(len(classes)) + 0.5, labels=classes)
     plt.yticks(ticks=np.arange(len(classes)) + 0.5, labels=classes, rotation=0)
 
-    # 添加对角线强调
     for i in range(len(classes)):
         plt.gca().add_patch(plt.Rectangle((i, i), 1, 1, fill=False, edgecolor='red', lw=2))
 
